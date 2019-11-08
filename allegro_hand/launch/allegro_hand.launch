@@ -78,7 +78,7 @@
        in two parameter names.) -->
 
   <group if="$(arg load_xacro)">
-        <param name="robot_description" command="xacro --inorder '$(arg XACRO_PATH)' $(arg urdf_args)"/>
+        <param name="robot_description" command="$(find xacro)/xacro '$(arg XACRO_PATH)' --check-order"/>
   </group>
 
   <!-- Allegro Hand controller and communication node. -->
