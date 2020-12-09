@@ -129,7 +129,7 @@ a peak-systems pcan to usb adapter.
 
   **NOTE:** For newer Linux kernels there is a pre-installed PCAN driver. However, that driver is network based. We still need the older interface, please scroll down and click "Download PCAN Linux Package".
 
-  [![Download PCAN driver](download-pcan.png)](https://youtu.be/KRsVgGfflKM?t=17)
+  ![Download PCAN driver](download-pcan.png)
 
 Install the drivers:
 
