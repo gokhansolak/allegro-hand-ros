@@ -104,18 +104,32 @@ Useful Links
  * [Allegro Hand wiki](http://www.simlab.co.kr/AllegroHand/wiki).
  * [ROS wiki for original package](http://www.ros.org/wiki/allegro_hand_ros).
 
+## Install
 
-Installing the PCAN driver
---------------------------
+* Install PCAN driver as described below.
+
+* Copy this repo under your [ROS workspace](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)'s `src` folder and make:
+```
+cd ~/catkin_ws/src
+git clone git@github.com:gokhansolak/allegro-hand-ros.git
+cd ..
+catkin_make
+```
+
+### Installing the PCAN driver
 
 Before using the hand, you must install the pcan drivers. This assumes you have
 a peak-systems pcan to usb adapter.
 
 1. Install these packages
 
-    sudo apt-get install libpopt-dev ros-indigo-libpcan
+    sudo apt-get install libpopt-dev ros-${ROS_DISTRO}-libpcan
 
 2. Download latest drivers: http://www.peak-system.com/fileadmin/media/linux/index.htm#download
+
+  **NOTE:** For newer Linux kernels there is a pre-installed PCAN driver. However, that driver is network based. We still need the older interface, please scroll down and click "Download PCAN Linux Package".
+
+  [![Download PCAN driver](download-pcan.png)](https://youtu.be/KRsVgGfflKM?t=17)
 
 Install the drivers:
 
